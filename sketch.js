@@ -120,25 +120,7 @@ function highlightZero() {
 
 
 function zeroSpread(row, col) {
-  let dbgColor = [245, 30, 10]; // Red for debugging
-
-  // Boundary and condition checks
-  if (row < 0 || col < 0 || row >= grid.length || col >= grid[0].length || grid[row][col] != 0 || visited[row][col]) {
-    return;
-  }
-
-  visited[row][col] = true; // Mark as visited
-  colorGrid[row][col] = dbgColor; // Set color for debugging
-
-  // Recursively spread to adjacent cells
-  zeroSpread(row, col + 1); // Right
-  zeroSpread(row, col - 1); // Left
-  zeroSpread(row + 1, col); // Down
-  zeroSpread(row - 1, col); // Up
-  zeroSpread(row + 1, col + 1); // Down-Right
-  zeroSpread(row + 1, col - 1); // Down-Left
-  zeroSpread(row - 1, col + 1); // Up-Right
-  zeroSpread(row - 1, col - 1); // Up-Left
+  // i cant do this
 }
 
 
